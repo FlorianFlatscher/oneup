@@ -59,6 +59,7 @@ button.secondary {
 
 button.primary {
     border: none;
+    border-radius: 52px;
     color: white;
     font-size: 1rem;
     font-family: Inter-Medium;
@@ -168,4 +169,8 @@ footer {
 .footer-license {
     margin-top: 2rem;
     font-size: 1rem;
+}
+
+a {
+    color: white;
 }
