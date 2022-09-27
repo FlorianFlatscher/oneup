@@ -16,7 +16,7 @@
             </a>
         </div>
         <div class="nav-cta">
-            <button class="secondary">Starten</button>
+            <button onClick="goToFunnel()" class="secondary">Starten</button>
         </div>
     </nav>
     <main>
@@ -28,7 +28,7 @@
                 <div class="mt">
                     Mehr Kunden gefällig? Viele Unternehmen scheitern, ihre Zielgruppe zu erreichen. Mit unsere Solution machen wir Unternehmen zu Verkaufstalenten.
                 </div>
-                <button class="primary mt">
+                <button onClick="goToFunnel()" class="primary mt">
                     Gratis Test-Run vereinbaren
                 </button>
             </div>
@@ -82,7 +82,7 @@
             <div class="mt-sm">
                 In einem Coffe-Call lernen wir uns kennen und beleuchten deine Brand von oben bis unten. Gegebenenfalls vereinbaren wir einen gratis einmonatigen Test-Run, welcher dir bereits Kunden bringt.
             </div>
-            <button class="mt primary">Gratis Test-Run starten</button>
+            <button onClick="goToFunnel()" class="mt primary">Gratis Test-Run starten</button>
         </section>
         <section class="mt standard">
             <img src="assets/path.svg" width="100%">
@@ -116,6 +116,12 @@
             </div>
         </footer>
     </main>
+
+    <script>
+        function goToFunnel() {
+            window.location.href='https://oneup-funnel.vercel.app';
+        }
+    </script>
 
 </body>
 </html>
