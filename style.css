@@ -18,14 +18,22 @@
     font-family: 'Inter-Light';
     src: url('./assets/fonts/Inter-Light.ttf');
 }
+@font-face {
+    font-family: 'Inter-Extra-Bold';
+    src: url('./assets/fonts/Inter-ExtraBold.ttf');
+}
 
-body {
-    margin: 0 auto;
-    max-width: 1125px;
+body { 
+    margin: 0;
     font-family: Inter-Light, sans-serif;
     font-size: 1.3rem;
     padding: 0;
     background-color: white;
+}
+
+.wrapper {
+    margin: 0rem auto;
+    max-width: 1125px;
 }
 
 .nav {
@@ -74,8 +82,28 @@ button.primary {
 }
 
 .heading-small {
-    font-family: Inter-Medium;
+    font-family: Inter-Extra-Bold;
     font-size: 2rem;
+}
+
+.bold {
+    font-family: Inter-Extra-Bold;
+}
+
+.center {
+    text-align: center !important;
+}
+
+button.center {
+    margin: auto;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.mw {
+    max-width: 75%;
+    margin: 3rem auto;
 }
 
 .standard {
@@ -110,7 +138,7 @@ button.primary {
 
 .cell-heading {
     font-size: 1.7rem;
-    font-family: Inter-Medium;
+    font-family: Inter-Extra-Bold !important;
 }
 
 .cell-text {
@@ -133,7 +161,7 @@ button.primary {
 }
 
 .p-2 {
-    padding: 2rem;
+    padding: 3rem;
 }
 
 .team {
@@ -173,4 +201,78 @@ footer {
 
 a {
     color: white;
+}
+
+.mt-2 {
+    margin-top: 2rem;
+}
+
+.img-network {
+    width: 80%;
+    margin: 3rem auto 2rem auto;
+}
+
+@media only screen and (min-width: 800px) {
+    .team {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 3rem;
+    }
+    .team > .card {
+        flex: 1;
+        width: 40% !important;
+    }
+    nav {
+        background-color: rgb(241, 241, 241) !important;
+    }
+    .wrapper {
+        margin: 10rem auto;
+    }
+    .img-brennen {
+        width: 60%;
+        margin: 6rem auto;
+    }
+}
+
+@media only screen and (min-width: 1130px) {
+    body {
+        font-size: 3rem;
+    }
+    button {
+        font-size: 2rem !important;
+        padding: 1rem 3rem !important;
+        height: inherit !important;
+    }
+    button.secondary {
+        border: 3px solid black;
+    }
+    .cell-heading {
+        font-size: 4rem;
+    }
+    .cell-1 {
+        font-size: 3rem;
+    }
+    .nav-logo {
+        width: 5rem !important;
+    }
+    .heading {
+        font-size: 4rem;
+    }
+    .heading-small {
+        font-size: 3rem;
+    }
+    .mt-2 {
+        margin-top: 6rem;
+    }
+    .footer-logo {
+        width: 5rem !important;
+    }
+    footer {
+        margin-top: 6rem !important;
+        padding-bottom: 4rem !important;
+    }
+    .footer-license {
+        font-size: 1rem !important;
+    }
 }
