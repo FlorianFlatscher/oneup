@@ -1,0 +1,16 @@
+version: '3.7'
+
+services:
+  oneup:
+    build: .
+    ports:
+        - "80:80"
+    platform: linux/amd64
+    restart: unless-stopped
+    networks:
+      - funnelnet
+
+networks:
+  funnelnet:
+    external:
+      name: proxy_net
